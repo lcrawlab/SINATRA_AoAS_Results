@@ -25,7 +25,7 @@ RATE = function(X, f.draws = NULL, pre.specify = FALSE, beta.draws = NULL, prop.
   }
 
   ### Register those Cores ###
-  cl = makeCluster(cores-1)
+  cl = makeCluster(cores-1, setup_strategy = 'sequential')
 #  registerDoParallel(cores=cores)
   registerDoParallel(cl,cores = (cores-1))
 
