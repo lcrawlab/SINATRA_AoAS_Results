@@ -7,7 +7,7 @@ The purpose of this repo is to provide the exact scripts/code used to produce to
 
 ## Install
 
-For the version of SINATRA used to generate the results, please use the command: `devtools::install({directory_where_you_cloned_this_repo/SINATRA_AOAS_results/sinatra)`
+For the version of SINATRA used to generate the results, please use the command: `devtools::install({directory_where_you_cloned_this_repo}/SINATRA_AOAS_results/sinatra)`
 
 ## Scripts
 
