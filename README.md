@@ -3,7 +3,11 @@ Sub-Image Analysis using Topological Summary Statistics.
 
 ## Purpose 
 
-The purpose of this branch is to provide the exact scripts/code used to produce to the simulation and real data results in the SINATRA manuscript.
+The purpose of this repo is to provide the exact scripts/code used to produce to the simulation and real data results in the SINATRA manuscript.
+
+## Install
+
+For the version of SINATRA used to generate the results, please use the command: `devtools::install({directory_where_you_cloned_this_repo/SINATRA_AOAS_results/sinatra)`
 
 ## Scripts
 
