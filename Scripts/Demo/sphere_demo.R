@@ -69,38 +69,6 @@ cols[data$noise] = 'blue'
 plot3d(dummy_sphere, col = cols)
 
 ####
-g = prcomp(data$data,rank. = 10)
-pca_out = data.frame(cbind(g$x,rep(c('Class 1','Class 2'), nsim)))
-pca_out[,1] = as.numeric(as.character(pca_out[,1]))
-pca_out[,2] = as.numeric(as.character(pca_out[,2]))
-library(umap)
-h =  umap(data$data)
-umap_out = data.frame(cbind(h$layout,rep(c('Class 1','Class 2'), nsim)))
-umap_out[,1] = as.numeric(as.character(umap_out[,1]))
-umap_out[,2] = as.numeric(as.character(umap_out[,2]))
-library(ggplot2)
-ggplot(umap_out,aes(x = `X1`, y = `X2`, col = `X3`)) + 
-  geom_point() +  labs(x = "Dim 1", y = "Dim 2", color = "Class") +
-  ggtitle(sprintf("UMAP for Sphere Sim")) +
-#  coord_cartesian(xlim= c(0,1.0))+
-  #  geom_abline(intercept = 0, slope = 1, alpha = 0.5) + 
-  #  coord_equal(ratio=1) +
-  theme_bw() +
-  theme(plot.title = element_text(hjust = 0.5, size = 20, face = 'bold'),
-        panel.background = element_blank(), axis.line = element_line(colour = "black"),axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"), legend.text = element_text(size = 18), legend.title = element_text(size=20,face="bold")) + scale_colour_hue(l=40)
-
-ggplot(pca_out,aes(x = `PC1`, y = `PC2`, col = `V11`)) + 
-  geom_point() +  labs(x = "Dim 1", y = "Dim 2", color = "Class") +
-  ggtitle(sprintf("PCA for Sphere Sim")) +
-  #  coord_cartesian(xlim= c(0,1.0))+
-  #  geom_abline(intercept = 0, slope = 1, alpha = 0.5) + 
-  #  coord_equal(ratio=1) +
-  theme_bw() +
-  theme(plot.title = element_text(hjust = 0.5, size = 20, face = 'bold'),
-        panel.background = element_blank(), axis.line = element_line(colour = "black"),axis.text=element_text(size=20),
-        axis.title=element_text(size=20,face="bold"), legend.text = element_text(size = 18), legend.title = element_text(size=20,face="bold")) + scale_colour_hue(l=40)
-
 #### Plot ROC Curve, and visualize ####
 
 
