@@ -29,4 +29,4 @@ This branch contains further inference functions for implementing the SINATRA pi
 
 ## Relevant Citations
 
-B. Wang*, T. Sudijono*, H. Kirveslahti*, T. Gao, D.M. Boyer, S. Mukherjee, and L. Crawford. SINATRA: a sub-image analysis pipeline for selecting features that differentiate classes of 3D shapes. _Annals of Applied Statistics_. In Press.
+B. Wang*, T. Sudijono*, H. Kirveslahti*, T. Gao, D.M. Boyer, S. Mukherjee, and L. Crawford. SINATRA: a sub-image analysis pipeline for selecting features that differentiate classes of 3D shapes. _Annals of Applied Statistics_. **15**(2): 638-661.
