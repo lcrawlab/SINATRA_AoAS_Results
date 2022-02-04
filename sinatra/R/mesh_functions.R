@@ -178,8 +178,8 @@ create_landmark_summary=function(directory, landmark_indices){
 #'@param ball_radius (float): The radius of the ball to compute the (S/D) EC on; if you want the curve to be computed relative to the shape, don't touch this parameter.
 #'
 #'@return final_list (list): A list containing the design matrix of meshes from the two classes and the importances of each variable.
-real_data_summary = function(shape_transformation, dir1,dir2,base_shape_dir,direction=dir,
-                             len=len,ec_type = 'ECT',
+real_data_summary = function(dir1,dir2,base_shape_dir,direction=dir,
+                             len=len,ec_type = 'ECT',shape_transformation='ECT',
                              ball = TRUE, ball_radius = 1.5,
                              mode = 'rate', reduce = max, alpha = 0.5, num_landmarks = 100){
   #Generate Matrix of EC curves and labels
