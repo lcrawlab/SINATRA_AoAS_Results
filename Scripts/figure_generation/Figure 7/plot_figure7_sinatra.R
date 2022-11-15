@@ -61,6 +61,14 @@ mesh_2 = process_off_file_v3(list.files(pset2$dir2,full.names = TRUE)[ind])
 #Also finding the landmarks
 
 
+comp1 = real_data_summary(dir1=pset1$dir1,dir2 = pset1$dir2,direction=pset1$dirs,len = pset1$len, ball = ball, ball_radius = ball_radius, ec_type = ec_type)
+comp2 = real_data_summary(dir1=pset2$dir1,dir2 = pset2$dir2,direction=pset2$dirs,len = pset2$len, ball = ball, ball_radius = ball_radius, ec_type = ec_type)
+comp3 = real_data_summary(dir1=pset3$dir1,dir2 = pset3$dir2,direction=pset3$dirs,len = pset3$len, ball = ball, ball_radius = ball_radius, ec_type = ec_type)
+comp4 = real_data_summary(dir1=pset4$dir1,dir2 = pset4$dir2,direction=pset4$dirs,len = pset4$len, ball = ball, ball_radius = ball_radius, ec_type = ec_type)
+comp5 = real_data_summary(dir1=pset5$dir1,dir2 = pset5$dir2,direction=pset5$dirs,len = pset5$len, ball = ball, ball_radius = ball_radius, ec_type = ec_type)
+comp6 = real_data_summary(dir1=pset6$dir1,dir2 = pset6$dir2,direction=pset6$dirs,len = pset6$len, ball = ball, ball_radius = ball_radius, ec_type = ec_type)
+
+
 mesh2_heat =  reconstruct_vertices_on_shape(dir = pset2$dirs,complex = mesh_2,rate_vals = comp2$Rate2[,2],
                                                len = pset2$len,cuts = 1000,cone_size = pset2$directions_per_cone,ball_radius = ball_radius, ball = ball,radius =1)
 mesh4_2_heat =  reconstruct_vertices_on_shape(dir = pset4$dirs,complex = mesh_2,rate_vals = comp4$Rate2[,2],
